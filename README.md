@@ -15,7 +15,6 @@ Este proyecto utiliza Django y Faker para migrar la base de datos, generar datos
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/tuusuario/unity-project.git
-   cd dashboard
    ```
 
 2. Crea un entorno virtual e instala las dependencias:
@@ -34,6 +33,13 @@ Para migrar las tablas necesarias en tu base de datos, ejecuta:
 ```bash
 python manage.py migrate
 ```
+
+Para realizar las migraciones de dashboard
+```bash
+python manage.py makemigrations dashboard
+python manage.py migrate dashboard
+```
+
 
 ## Carga de Datos Ficticios
 
